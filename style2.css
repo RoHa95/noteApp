@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+  --nav-width: 250px;
+}
+
+body {
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  direction: rtl;
+}
+.notes {
+  display: flex;
+}
+.note__sidebar {
+  display: flex;
+  flex-direction: column;
+  width: var(--nav-width);
+  position: sticky;
+  background: linear-gradient(180deg, #db2777, #fa0372);
+  border-radius: 100px 0 0 0;
+  height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.note__logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem 0;
+  color: var(--mainWhite);
+  border-bottom: 1px solid var(--secondaryColor);
+  font-weight: 800;
+  margin: 0 10px;
+  text-align: center;
+}
+.note__list {
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+.note__list::-webkit-scrollbar {
+  display: none;
+}
+.note__add button {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--mainRed);
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.1rem;
+  background-color: var(--mainWhite);
+}
+.note__add button:hover {
+  color: var(--primaryColor);
+}
+
+.note__small {
+  border-radius: 10px;
+  background-color: var(--secondaryColor);
+  padding: 0.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.note__small-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  color: var(--mainGray);
+}
+.note__small-updated {
+  font-style: italic;
+  color: var(--mainGray);
+  direction: ltr;
+}
