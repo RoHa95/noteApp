@@ -123,3 +123,19 @@ body {
   margin-top: 2em;
   resize: none;
 }
+.notes__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.notes__list-trash i {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: var(--mainRed);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
